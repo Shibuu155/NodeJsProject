@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>headerlinks}}
+  </head>
+  <body>
+    {{!-- including navbar  --}}
+    {{>navbar}}
+
+    <!-- main header -->
+    <div class="container-fluid main_header mb-3">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <!-- left side div  -->
+            <div class="col-md-12 col-12 main_header_left align-items-center">
+                <figure class="errorPic">
+                    <img src="images/bg1.jpg" alt="" class="img-fluid" title="Shubham Thakur">
+                </figure>
+                <p>Welcome to Weather App</p>
+                <h1>{{msgError}}</h1>
+                <a href="/"><button>Go Back</button></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- including footer  -->
+    {{>footer}}
+  </body>
+</html>
